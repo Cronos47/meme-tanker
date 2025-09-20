@@ -1,0 +1,15 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+Pillow==10.4.0
+moviepy==1.0.3
+numpy==2.1.1
+soundfile==0.12.1
+
+# --- AI optional (enable for real generation) ---
+openai==1.40.6           # for caption suggestions (LLM)
+diffusers==0.30.0 
+transformers==4.44.2 
+accelerate==0.34.2 
+safetensors==0.4.5

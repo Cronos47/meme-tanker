@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f14;
+  --panel: #0f1722;
+  --panel-80: rgb(15 23 34 / 0.8); /* translucent panel background */
+  --text: #dbe7ff;
+}
+
+html, body {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(111, 231, 255, 0.06), transparent 50%),
+              radial-gradient(1000px 500px at 120% 10%, rgba(167, 139, 250, 0.06), transparent 50%),
+              var(--bg);
+  color: var(--text);
+}
+
+/* Tailwind custom components */
+@layer components {
+  .card {
+    @apply rounded-2xl backdrop-blur border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,.35)];
+    background: var(--panel-80);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition border;
+    border-color: rgba(255,255,255,0.15);
+    background: linear-gradient(135deg, rgba(110,231,255,0.15), rgba(167,139,250,0.15));
+  }
+  .btn:hover { box-shadow: 0 0 0.6rem rgba(110,231,255,.4); }
+
+  .drop {
+    @apply border border-dashed border-white/20 rounded-2xl p-6 text-center transition;
+  }
+  .drop:hover { border-color: rgba(110,231,255,.6); box-shadow: 0 0 1rem rgba(110,231,255,.25); }
+
+  .input {
+    @apply w-full rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none;
+  }
+}
