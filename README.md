@@ -35,7 +35,7 @@ From quick captions to karaoke dubs, from AI-generated images to context-object 
 
 ```cd backend/```
 
-```python -m venv .meme-forge```
+```python3.12 -m venv .meme-forge```
 
 ### Windows
 ```.meme-forge\Scripts\Activate.Ps1```
