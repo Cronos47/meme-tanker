@@ -34,6 +34,7 @@ From quick captions to karaoke dubs, from AI-generated images to context-object 
 ## Backend Setup
 
 ```cd backend```
+
 ```python -m venv .meme-forge```
 
 ### Windows
