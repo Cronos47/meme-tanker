@@ -33,17 +33,17 @@ From quick captions to karaoke dubs, from AI-generated images to context-object 
 
 ## Backend Setup
 
-cd backend
-python -m venv .meme-forge
+```cd backend```
+```python -m venv .meme-forge```
 
 ### Windows
-.meme-forge\Scripts\Activate.Ps1
+```.meme-forge\Scripts\Activate.Ps1```
 
 ### macOS/Linux
-source .meme-forge/bin/activate
+```source .meme-forge/bin/activate```
 
-pip install -r requirements.txt
-cp .env.sample .env
+```pip install -r requirements.txt```
+```cp .env.sample .env```
 
 ## Run the API:
 ```uvicorn app.main:app --reload --port 8081```
